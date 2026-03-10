@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 4 - ICT</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: url('venom1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background: rgba(0,0,0,0.85);
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-right: 3px solid white;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 8px 0;
+      border: 2px solid white;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      background: white;
+      color: black;
+    }
+    .content {
+      margin-left: 270px;
+      padding: 40px;
+      flex: 1;
+    }
+    .lesson {
+      background: rgba(0,0,0,0.7);
+      padding: 25px;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+    .lesson h1 {
+      background: white;
+      color: black;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    ul { padding-left: 20px; }
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      background: black;
+      color: white;
+      border: 2px solid white;
+    }
+    code {
+      background: rgba(255,255,255,0.1);
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="ict.html">ICT Lessons</a>
+    <a href="ap.html">AP Lessons</a>
+    <a href="events.html">Events</a>
+  </div>
+
+  <div class="content">
+    <div class="lesson">
+      <h1>Lesson 4: CSS Rule & Classes</h1>
+      <p>A <strong>CSS rule</strong> has two main parts: a selector and one or more style declarations.</p>
+
+      <p><strong>Basic format of a CSS style rule:</strong></p>
+      <p>For Inline Style Rule:</p>
+      <code>&lt;tag style="style declaration"&gt;<br>
+      &lt;tag style="prop1:value; prop2:value; prop3:value;"&gt;</code>
+
+      <p>For Document-level and External Style Sheets:</p>
+      <code>selector { style declarations }<br>
+      selector { prop1:value; prop2:value; prop3:value; }</code>
+
+      <h2>Style Properties</h2>
+      <p>Properties in CSS are grouped into six categories:</p>
+      <ul>
+        <li>Fonts</li>
+        <li>Colors and Backgrounds</li>
+        <li>Text</li>
+        <li>Boxes and Layout</li>
+        <li>Lists</li>
+        <li>Tag Classifications</li>
+      </ul>
+
+      <h2>Classes</h2>
+      <p><strong>What are Classes?</strong></p>
+      <ul>
+        <li>A class is a user-defined selector used to apply style rules to specific HTML tags.</li>
+        <li>They help control individual element formatting.</li>
+        <li>They are reusable and flexible, allowing multiple elements to share the same style.</li>
+        <li>Classes are defined by a dot (.) before the class name.</li>
+      </ul>
+
+      <h2>How to Define and Use Classes</h2>
+      <p>Two ways to write class selectors:</p>
+      <ul>
+        <li><code>p.golden { color: blue; }</code> → Element + class selector</li>
+        <li><code>.sodapop { color: red; }</code> → Class selector only</li>
+      </ul>
+      <p>Apply a class to an element:</p>
+      <code>&lt;p class="golden"&gt;This text is blue.&lt;/p&gt;</code>
+
+      <p><strong>Note:</strong> One element can have multiple classes, and one class can be applied to many elements.</p>
+
+      <h2>Class Selector</h2>
+      <ul>
+        <li>Class selector (.classname): Reusable across many elements.</li>
+        <li>Element + Class selector (p.classname): Gives precise control over styling a specific type of element.</li>
+      </ul>
+
+      <a href="ict.html" class="back-btn">← Back to ICT</a>
+    </div>
+  </div>
+</body>
+</html>

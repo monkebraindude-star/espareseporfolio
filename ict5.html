@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 5 - ICT</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: url('venom1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background: rgba(0,0,0,0.85);
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-right: 3px solid white;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 8px 0;
+      border: 2px solid white;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      background: white;
+      color: black;
+    }
+    .content {
+      margin-left: 270px;
+      padding: 40px;
+      flex: 1;
+    }
+    .lesson {
+      background: rgba(0,0,0,0.7);
+      padding: 25px;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+    .lesson h1 {
+      background: white;
+      color: black;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    ul { padding-left: 20px; }
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      background: black;
+      color: white;
+      border: 2px solid white;
+    }
+    code {
+      background: rgba(255,255,255,0.1);
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="ict.html">ICT Lessons</a>
+    <a href="ap.html">AP Lessons</a>
+    <a href="events.html">Events</a>
+  </div>
+
+  <div class="content">
+    <div class="lesson">
+      <h1>Lesson 5: CSS Selectors</h1>
+      <p>CSS selectors are used to “find” or “select” the HTML elements that you want to style.</p>
+      <p>They are divided into six main types:</p>
+      <ul>
+        <li>Class selector</li>
+        <li>Element (Tag) selector</li>
+        <li>ID selector</li>
+        <li>Universal selector</li>
+        <li>Group selector</li>
+        <li>Attribute selector</li>
+      </ul>
+
+      <h2>Element Selector</h2>
+      <p>Selects specific HTML elements such as <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, or <code>&lt;h1&gt;</code> and applies CSS to them.</p>
+      <code>p { color: blue; }</code>
+
+      <h2>ID Selector</h2>
+      <p>Used to apply a style to one unique element on a page. Defined by <strong>#</strong>.</p>
+      <code>#title { font-size: 30px; color: red; }</code><br>
+      <code>&lt;h1 id="title"&gt;Welcome&lt;/h1&gt;</code>
+
+      <h2>Universal Selector</h2>
+      <code>* { margin: 0; padding: 0; box-sizing: border-box; }</code>
+
+      <h2>Group Selector</h2>
+      <code>h1, h2, h3 { color: blue; }</code>
+
+      <h2>Attribute Selector</h2>
+      <code>input[type="text"] { background-color: yellow; }</code>
+
+      <h2>When to Use Each Selector</h2>
+      <ul>
+        <li>Class Selector (.) — reusable for multiple elements</li>
+        <li>ID Selector (#) — unique element only</li>
+        <li>Element Selector — targets all of the same element</li>
+        <li>Universal Selector (*) — applies to all elements</li>
+        <li>Group Selector — saves time and code</li>
+        <li>Attribute Selector — targets specific attributes</li>
+      </ul>
+
+      <a href="ict.html" class="back-btn">← Back to ICT</a>
+    </div>
+  </div>
+</body>
+</html>

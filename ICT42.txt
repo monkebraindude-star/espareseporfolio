@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 2 - Where to Place Scripts</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: url('venom.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background: rgba(0,0,0,0.85);
+      padding: 20px;
+      position: fixed;
+      top: 0; left: 0;
+      height: 100%;
+      border-right: 3px solid white;
+    }
+    .sidebar h2 { text-align: center; margin-bottom: 20px; border-bottom: 2px solid white; padding-bottom: 10px; }
+    .sidebar a {
+      display: block; color: white; text-decoration: none;
+      padding: 10px; margin: 8px 0; border: 2px solid white;
+      text-align: center; transition: 0.3s;
+    }
+    .sidebar a:hover { background: white; color: black; }
+    .content { margin-left: 270px; padding: 40px; flex: 1; }
+    .lesson {
+      background: rgba(0,0,0,0.7);
+      padding: 25px;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+    .lesson h1 {
+      background: white;
+      color: black;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    ul { padding-left: 20px; margin-bottom: 15px; }
+    .image-container {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .image-box {
+      width: 200px; height: 150px;
+      background: rgba(255,255,255,0.2);
+      border: 2px solid white;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden; border-radius: 5px;
+    }
+    .image-box img { width: 100%; height: 100%; object-fit: cover; }
+    .back-btn {
+      display: inline-block; margin-top: 20px;
+      padding: 10px 15px; background: white; color: black;
+      text-decoration: none; font-weight: bold; border-radius: 5px;
+      transition: 0.3s;
+    }
+    .back-btn:hover { background: black; color: white; border: 2px solid white; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="ict.html">ICT Lessons</a>
+    <a href="ap.html">AP Lessons</a>
+    <a href="events.html">Events</a>
+  </div>
+
+  <div class="content">
+    <div class="lesson">
+      <h1>Lesson 2: Where to Place Scripts</h1>
+
+      <p><strong>JavaScript scripts</strong> can be placed in different parts of an HTML document depending on how the developer wants the script to run.</p>
+
+      <p><strong>1. Inside the Head Section</strong></p>
+      <ul>
+        <li>Scripts can be placed inside the &lt;head&gt; tag.</li>
+        <li>Usually used for functions that will be called later in the page.</li>
+        <li>The script runs before the webpage content loads.</li>
+      </ul>
+
+      <p><strong>2. Inside the Body Section</strong></p>
+      <ul>
+        <li>Scripts can also be placed inside the &lt;body&gt; tag.</li>
+        <li>This is often placed at the bottom of the body.</li>
+        <li>It allows the HTML content to load first before the script runs.</li>
+      </ul>
+
+      <p><strong>3. External JavaScript File</strong></p>
+      <ul>
+        <li>JavaScript code can be written in a separate .js file.</li>
+        <li>The file is connected to HTML using the &lt;script src="file.js"&gt; tag.</li>
+        <li>This method helps keep code organized and easier to maintain.</li>
+      </ul>
+
+      <p><strong>Advantages of Using External Scripts</strong></p>
+      <ul>
+        <li>Makes code cleaner and more organized</li>
+        <li>Allows the same script to be used on multiple pages</li>
+        <li>Improves website maintenance and updates</li>
+      </ul>
+
+      <a href="ICTQ4.html" class="back-btn">← Back to ICT Lessons </a>
+    </div>
+  </div>
+</body>
+</html>

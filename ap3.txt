@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 3 - AP</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: url('venom.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background: rgba(0,0,0,0.85);
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-right: 3px solid white;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 8px 0;
+      border: 2px solid white;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      background: white;
+      color: black;
+    }
+    .content {
+      margin-left: 270px;
+      padding: 40px;
+      flex: 1;
+    }
+    .lesson {
+      background: rgba(0,0,0,0.7);
+      padding: 25px;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+    .lesson h1 {
+      background: white;
+      color: black;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    ul { padding-left: 20px; margin-bottom: 20px; }
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      background: black;
+      color: white;
+      border: 2px solid white;
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .image-container img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border: 2px solid white;
+      border-radius: 5px;
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="ict.html">ICT Lessons</a>
+    <a href="ap.html">AP Lessons</a>
+    <a href="events.html">Events</a>
+  </div>
+
+  <div class="content">
+    <div class="lesson">
+      <h1>Lesson 3: Price Elasticity</h1>
+
+      <p><strong>ANO ANG ELASTISIDAD?</strong></p>
+      <ul>
+        <li>Paraan upang masukat ang pagtugon ng isang indibidwal sa pagbabago ng presyo.</li>
+        <li>Bahagdan ng pagbabago sa dami ng demand ayon sa bahagdan ng pagbabago ng presyo.</li>
+        <li>May limang uri ng elastisidad: Elastik, Di-Elastik, Unitary, Ganap na Elastik, Ganap na Di-Elastik.</li>
+      </ul>
+
+      <p><strong>ELASTIK</strong></p>
+      <ul>
+        <li>Coefficient: |E| &gt; 1</li>
+        <li>Malaki ang pagtugon ng Quantity Demanded/Quantity Supplied kaysa sa bahagdan ng pagbabago ng presyo.</li>
+        <li>Halimbawa: Mga produktong maraming kapalit (softdrinks).</li>
+      </ul>
+
+      <p><strong>DI-ELASTIK</strong></p>
+      <ul>
+        <li>Coefficient: |E| &lt; 1</li>
+        <li>Maliit ang pagtugon ng Qd/Qs kaysa sa bahagdan ng pagbabago ng presyo.</li>
+        <li>Halimbawa: Mga pangunahing produktong walang kapalit (gamot).</li>
+      </ul>
+
+      <p><strong>UNITARY</strong></p>
+      <ul>
+        <li>Coefficient: |E| = 1</li>
+        <li>Pareho ang bahagdan ng pagbabago ng presyo at ng dami ng demand/supply.</li>
+      </ul>
+
+      <p><strong>GANAP NA ELASTIK</strong></p>
+      <ul>
+        <li>Coefficient: |E| = ∞</li>
+        <li>Pagbabago sa presyo ay magdudulot ng infinite na pagbabago sa Qd/Qs (horizontal curve).</li>
+        <li>Halimbawa: Produktong handang bilhin ng marami sa iisang presyo (tsokolate).</li>
+      </ul>
+
+      <p><strong>GANAP NA DI-ELASTIK</strong></p>
+      <ul>
+        <li>Coefficient: |E| = 0</li>
+        <li>Hindi nagbabago ang Qd/Qs kahit magbago ang presyo (vertical curve).</li>
+      </ul>
+
+      <div class="image-container">
+        <img src="elas1.jpg" alt="Lesson 3 Image 1">
+        <img src="elas2.jpg" alt="Lesson 3 Image 2">
+      </div>
+
+      <a href="ap.html" class="back-btn">← Back to AP Lessons</a>
+    </div>
+  </div>
+</body>
+</html>

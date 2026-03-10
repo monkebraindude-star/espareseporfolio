@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      background: url('venom-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .sidebar {
+      width: 180px;
+      background: rgba(0, 0, 0, 0.8);
+      border-right: 2px solid white;
+      padding-top: 20px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 12px;
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      margin: 5px;
+      text-align: left;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .content {
+      margin-left: 200px;
+      padding: 30px;
+      flex: 1;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 28px;
+      border-bottom: 2px solid white;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .section {
+      border: 2px solid white;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 500px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .section img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 15px;
+    }
+
+    .section h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="sidebar">
+    <a href="index.html"> Home</a>
+    <a href="about.html"> About Me</a>
+    <a href="ict.html"> ICT Lessons</a>
+    <a href="ap.html"> AP Lessons</a>
+    <a href="events.html"> Events</a>
+    <a href="3rd.html"> 3rd Quarter </a>
+    <a href="4th.html"> 4th Quarter </a>
+    <a href="Noli.html"> Noli Video </a>
+  </div>
+
+  <div class="content">
+    <h1>About Me</h1>
+
+    <div class="section">
+      <img src="logo.jpg" alt="My Picture">
+      <h2>Myself</h2>
+      <p>Emmanuel Joseph F. Espares, 14, April 12 2011.</p>
+    </div>
+
+    <div class="section">
+      <img src="j.jpg" alt="Friend">
+      <img src="ju.jpg" alt="Friend">
+      <h2>My Friends</h2>
+      <p>My friends, andjhay and uniquo (insert other friends since i dont have groupie) </p>
+    </div>
+
+    <div class="section">
+      <img src="family1.jpg" alt="Family">
+      <img src="family2.jpg" alt="Family">
+      <h2>My Family</h2>
+      <p>My family. My family is very happy when there is a birthday because there is a lot of food..</p>
+    </div>
+
+    <div class="section">
+      <img src="hobby1.jpg" alt="Hobby">
+      <img src="hobby2.jpg" alt="Hobby">
+      <h2>My Hobbies</h2>
+      <p>Billiards and other sports (fun sports only that dont get me injured) </p>
+    </div>
+ <p>
+<video width="640" height="360" controls>
+<source src="f4.mp4" type="video/mp4">
+</video>
+</p>
+</body>
+</html>

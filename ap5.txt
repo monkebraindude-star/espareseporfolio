@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 5 - AP</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: url('venom.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background: rgba(0,0,0,0.85);
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-right: 3px solid white;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 8px 0;
+      border: 2px solid white;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      background: white;
+      color: black;
+    }
+    .content {
+      margin-left: 270px;
+      padding: 40px;
+      flex: 1;
+    }
+    .lesson {
+      background: rgba(0,0,0,0.7);
+      padding: 25px;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+    .lesson h1 {
+      background: white;
+      color: black;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    ul { padding-left: 20px; margin-bottom: 20px; }
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      background: black;
+      color: white;
+      border: 2px solid white;
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .image-container img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border: 2px solid white;
+      border-radius: 5px;
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="ict.html">ICT Lessons</a>
+    <a href="ap.html">AP Lessons</a>
+    <a href="events.html">Events</a>
+  </div>
+
+  <div class="content">
+   <div class="lesson">
+  <h1>Lesson 5: Iba’t Ibang Estruktura ng Pamilihan</h1>
+
+  <p><strong>Pamilihan</strong> = Mamimili + Produkto + Prodyuser</p>
+  <p>Nakakamit ng konsyumer ang kanyang pangangailangan at kagustuhan dito.</p>
+
+  <p><strong>Batayan sa Pagkakaiba ng Estruktura:</strong></p>
+  <ul>
+    <li>Bilang at laki ng produsyer o konsyumer</li>
+    <li>Uri ng produkto/serbisyo</li>
+    <li>Kontrol sa pagpasok sa pamilihan</li>
+    <li>Kontrol sa presyo</li>
+    <li>Di-presyong kompetisyon</li>
+  </ul>
+
+  <p><strong>Apat na Uri ng Pamilihan:</strong></p>
+  <ul>
+    <li>Lokal</li>
+    <li>Panrelihiyon</li>
+    <li>Pambansa</li>
+    <li>Pandaigdigan</li>
+  </ul>
+
+  <p><strong>Estrukturang Pampamilihan:</strong></p>
+  <ul>
+    <li>Ganap na Kompetisyon</li>
+    <li>Di-Ganap na Kompetisyon</li>
+  </ul>
+
+  <div class="image-container">
+    <div class="image-box"><img src="pamilihan1.jpg"></div>
+    <div class="image-box"><img src="pamilihan2.jpg"></div>
+  </div>
+
+  <a href="ap.html" class="back-btn">← Back to AP</a>
+</div>
+
+
+</body>
+</html>

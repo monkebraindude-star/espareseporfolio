@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 2 - ICT</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: url('venom.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background: rgba(0,0,0,0.85);
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-right: 3px solid white;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 8px 0;
+      border: 2px solid white;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      background: white;
+      color: black;
+    }
+    .content {
+      margin-left: 270px;
+      padding: 40px;
+      flex: 1;
+    }
+    .lesson {
+      background: rgba(0,0,0,0.7);
+      padding: 25px;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+    .lesson h1 {
+      background: white;
+      color: black;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    ul { padding-left: 20px; }
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      background: black;
+      color: white;
+      border: 2px solid white;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="ict.html">ICT Lessons</a>
+    <a href="ap.html">AP Lessons</a>
+    <a href="events.html">Events</a>
+  </div>
+
+  <div class="content">
+    <div class="lesson">
+      <h1>Lesson 2: Style Sheet and Its Parts (Review)</h1>
+      <p><strong>What is a Style Sheet?</strong><br>
+      A set of instructions to a Web browser on how to display various elements on a Web page is known as a style sheet. Every CSS is a series of instructions called statements that:</p>
+      <ul>
+        <li>Identify the elements in an HTML document that it affects</li>
+        <li>Tell the browser how to draw these elements</li>
+        <li>Apply to elements such as paragraphs, links, and list items</li>
+        <li>Are just text files or text embedded in the head of an HTML document that separate content from appearance</li>
+        <li>Suggest to the browser how the page should be displayed</li>
+      </ul>
+
+      <p><strong>How CSS is Applied:</strong></p>
+      <ul>
+        <li><b>Linked method:</b> CSS is stored in a separate file.</li>
+        <li><b>Embedded method:</b> CSS is stored in the header section.</li>
+        <li><b>Inline method:</b> CSS is stored directly in the tag.</li>
+      </ul>
+
+      <p><strong>Inline Style:</strong> Defines the style for a single element using the style attribute.</p>
+      <p><strong>Embedded Style:</strong> Defined within the &lt;style&gt; tags inside the head part of an HTML file.</p>
+      <p><strong>Linked Style:</strong> Made outside the HTML file using the &lt;link&gt; element.</p>
+
+      <p><strong>Creating an External CSS:</strong></p>
+      <ul>
+        <li>Open a blank document in Notepad.</li>
+        <li>Type the styles you want to define.</li>
+        <li>Save with .css extension.</li>
+      </ul>
+
+      <p><strong>Linking Your CSS to an HTML File:</strong></p>
+      <code>&lt;link rel="stylesheet" href="linked.css" type="text/css"&gt;</code>
+
+      <br><a href="ict.html" class="back-btn">← Back to ICT</a>
+    </div>
+  </div>
+</body>
+</html>

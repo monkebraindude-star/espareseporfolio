@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>4th Quarter</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      background: url('venom-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .sidebar {
+      width: 180px;
+      background: rgba(0, 0, 0, 0.8);
+      border-right: 2px solid white;
+      padding-top: 20px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 12px;
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      margin: 5px;
+      text-align: left;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .content {
+      margin-left: 200px;
+      padding: 30px;
+      flex: 1;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 28px;
+      border-bottom: 2px solid white;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .lesson-button {
+      display: block;
+      width: 80%;
+      max-width: 500px;
+      margin: 15px auto;
+      padding: 20px;
+      border: 2px solid white;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .lesson-button:hover {
+      background: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="sidebar">
+    <a href="index.html"> Home</a>
+    <a href="about.html"> About Me</a>
+    <a href="ict.html"> ICT Lessons</a>
+    <a href="ap.html"> AP Lessons</a>
+    <a href="events.html"> Events</a>
+    <a href="3rd.html"> 3rd Quarter </a>
+    <a href="4th.html"> 4th Quarter </a>
+    <a href="Noli.html"> Noli Video </a>
+  </div>
+
+  <div class="content">
+    <h1>4th QTR</h1>
+    <a href="APQ4.html" class="lesson-button">AP Lessons</a>
+    <a href="ICTQ4.html" class="lesson-button">ICT Lessons</a>
+    <a href="BOTB.html" class="lesson-button">BOTB</a> 
+    <a href="DANCE.html" class="lesson-button">STREETDANCE</a>
+    <a href="MDA.html" class="lesson-button">FOLK DANCE</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 3 - ICT</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: url('venom.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background: rgba(0,0,0,0.85);
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-right: 3px solid white;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 8px 0;
+      border: 2px solid white;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      background: white;
+      color: black;
+    }
+    .content {
+      margin-left: 270px;
+      padding: 40px;
+      flex: 1;
+    }
+    .lesson {
+      background: rgba(0,0,0,0.7);
+      padding: 25px;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+    .lesson h1 {
+      background: white;
+      color: black;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    ul { padding-left: 20px; }
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      background: black;
+      color: white;
+      border: 2px solid white;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="ict.html">ICT Lessons</a>
+    <a href="ap.html">AP Lessons</a>
+    <a href="events.html">Events</a>
+  </div>
+
+  <div class="content">
+    <div class="lesson">
+      <h1>Lesson 3: Display Property</h1>
+      <p>The CSS display property allows you to control how an element is displayed.</p>
+
+      <p><strong>Block Level Elements</strong><br>
+      Block level elements take up as much space as possible by default. They start on a new line and stack vertically. Examples include:</p>
+      <ul>
+        <li>&lt;p&gt;</li>
+        <li>&lt;ol&gt;, &lt;ul&gt;, &lt;dl&gt;</li>
+        <li>All heading tags</li>
+        <li>&lt;article&gt;, &lt;section&gt;, &lt;div&gt;</li>
+      </ul>
+
+      <p><strong>Inline Level Elements</strong><br>
+      Inline elements display in a line without forcing the next text to a new line. Examples include:</p>
+      <ul>
+        <li>&lt;a&gt;</li>
+        <li>&lt;strong&gt;, &lt;em&gt;, &lt;b&gt;, &lt;i&gt;, &lt;q&gt;, &lt;mark&gt;</li>
+        <li>&lt;span&gt;</li>
+      </ul>
+      <p><em>Note: Inline elements cannot contain block-level elements.</em></p>
+
+      <p><strong>Div Tag</strong><br>
+      Div divides the contents of a web page into individual sections. It allows you to apply styles to different sections of your webpage. It is a block-level element and usually applied to block HTML content.</p>
+
+      <p><strong>Span Tag</strong><br>
+      Span is used to emphasize words or sentences within a paragraph. It is an inline element used for smaller parts of content.</p>
+
+      <p><strong>Span and Div Tags</strong><br>
+      They have no default styling. Used with CSS to format parts of the content.
+      &lt;div&gt; has line breaks before and after; &lt;span&gt; does not.</p>
+
+      <br><a href="ict.html" class="back-btn">← Back to ICT</a>
+    </div>
+  </div>
+</body>
+</html>
