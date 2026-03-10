@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - EJ's E-Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      background: url('venom-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Overlay */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 180px;
+      background: rgba(0, 0, 0, 0.8);
+      border-right: 2px solid white;
+      padding-top: 20px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 12px;
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      margin: 5px;
+      text-align: left;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: white;
+      color: black;
+    }
+
+    /* Content */
+    .content {
+      margin-left: 200px;
+      padding: 40px;
+      text-align: center;
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .center-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="sidebar">
+    <a href="index.html"> Home</a>
+    <a href="about.html"> About Me</a>
+    <a href="ict.html"> ICT Lessons</a>
+    <a href="ap.html"> AP Lessons</a>
+    <a href="events.html"> Events</a>
+    <a href="3rd.html"> 3rd Quarter </a>
+    <a href="4th.html"> 4th Quarter </a>
+    <a href="Noli.html"> Noli Video </a>
+  </div>
+
+  <div class="content">
+    <img src="logo.jpg" alt="My Picture" class="center-img">
+    <h1>Welcome to EJ's E-Portfolio</h1>
+    <p>Open the menu to explore my personal space, lessons, and school activities. (ctto for every picture and video.) </p>
+  </div>
+
+</body>
+</html>
